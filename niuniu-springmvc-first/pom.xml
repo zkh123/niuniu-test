@@ -54,7 +54,7 @@
   <build>
     <finalName>niuniu-springmvc-first</finalName>
     <plugins>
-      <!--servlet容器 jetty插件-->
+      <!--servlet容器 jetty插件 (jetty 跟 tomcat一样 都是跑java项目的服务器)-->
       <plugin>
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-maven-plugin</artifactId>
