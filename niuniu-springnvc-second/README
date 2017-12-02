@@ -1,0 +1,13 @@
+1,web.xml中配置DispatcherServlet
+2,springmvc配置文件SpringMVC-servlet.xml中:
+  <mvc:annotation-driven/>  配置HandlerMapping(处理器映射器), HandlerAdapter(处理器适配器)
+
+  <context:component-scan base-package="com.niuniu.springnvc.controller"/> 配置Handler(Controller)处理器[做逻辑处理]
+
+  配置视图解析器
+  <bean id="defaultViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+      <property name="prefix" value="/WEB-INF/views/"/><!--设置JSP文件的目录位置-->
+      <property name="suffix" value=".jsp"/>
+  </bean>
+
+(关于springmvc就这四个基本配置)[至少有的四个基本的] [如果只做接口 不做页面的 就不需要配置视图解析器]
