@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.niuniu.springnvc.second</groupId>
-  <artifactId>niuniu-springnvc-second</artifactId>
+  <groupId>com.niuniu.springmvc</groupId>
+  <artifactId>niuniu-springnvc-three</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>niuniu-springnvc-second Maven Webapp</name>
+  <name>niuniu-springnvc-three Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <!--测试-->
@@ -46,12 +46,18 @@
       <version>1.2</version>
     </dependency>
 
+    <!--json数据转换工具-->
+    <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.41</version>
+    </dependency>
+
+
   </dependencies>
-
   <build>
-
-    <finalName>niuniu-springnvc-second</finalName>
-
+    <finalName>niuniu-springnvc-three</finalName>
     <plugins>
       <!--servlet容器 jetty插件-->
       <plugin>

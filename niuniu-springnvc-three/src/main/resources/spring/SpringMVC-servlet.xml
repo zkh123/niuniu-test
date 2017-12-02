@@ -10,21 +10,12 @@
                         http://www.springframework.org/schema/mvc
                         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <!--注解驱动--> <!--可以代替下面两个--> <!--实际开发中  就是这样配置(不能少)-->
+    <!--注解驱动-->
     <mvc:annotation-driven/>
 
-    <!--配置HanderMapping-->
-    <!--<bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>-->
 
-    <!--配置处理器适配器-->
-    <!--<bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>-->
-
-
-    <!--通过扫描配置所有的controller-->  <!--取代下面的单独配置bean-->  <!--实际开发中这样配置 (不能少) 只需要扫描controller包下面的-->
-    <context:component-scan base-package="com.niuniu.springnvc.controller"/>
-    <!--<bean name="/niuniu" class="com.niuniu.springnvc.controller.FirstController"></bean>-->
-
-
+    <!--通过扫描配置所有的controller-->
+    <context:component-scan base-package="com.niuniu.springmvc.controller"/>
 
 
     <!--配置视图解析器-->
